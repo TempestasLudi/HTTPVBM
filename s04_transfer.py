@@ -52,5 +52,5 @@ while 1:
 	i = 3;
 	while running:
 		if is_prime(i):
-			send_chunk(str(i) + "\n", connection)
+			running = send_chunk(str(i) + "\n", connection)
 		i += 2
